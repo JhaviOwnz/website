@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Aplicación de Pruebas Básica con Node.js y React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicación web sencilla permite registrar usuarios, iniciar sesión y acceder a una página de configuración. El proyecto utiliza Node.js y React para el frontend y Node.js para el backend.
 
-## Available Scripts
+## Comenzando
 
-In the project directory, you can run:
+Estas instrucciones te ayudarán a obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
-### `npm start`
+### Prerrequisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Las dependencias y herramientas necesarias para ejecutar el proyecto incluyen:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js
+- Docker
+- Docker Compose
+- Git
 
-### `npm test`
+### Instalación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Sigue estos pasos para configurar el entorno de desarrollo local y cómo instalar las dependencias del proyecto:
 
-### `npm run build`
+1. Clona el repositorio:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+git clone https://github.com/tu_usuario/tu_repositorio.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Ingresa al directorio del proyecto:
 
-### `npm run eject`
+cd tu_repositorio
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido (reemplaza los valores según sea necesario):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+DB_URL=mongodb://mongo:27017/mi-aplicacion
+JWT_SECRET=mi_secreto_jwt
+NODE_ENV=development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Construye e inicia los contenedores Docker usando Docker Compose:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+docker-compose up --build
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+La aplicación estará disponible en `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Ejecutando las pruebas
 
-### Making a Progressive Web App
+Explica cómo ejecutar las pruebas automatizadas del proyecto, si las hay.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Despliegue
 
-### Advanced Configuration
+Para desplegar el proyecto en un entorno de producción, crea un Droplet en DigitalOcean e instala Docker y Docker Compose en él. Luego, sigue los pasos de instalación descritos anteriormente, pero usa `NODE_ENV=production` en el archivo `.env`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Construido con
 
-### Deployment
+Estas son las principales tecnologías, bibliotecas y herramientas utilizadas en el proyecto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [React](https://reactjs.org/)
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Docker](https://www.docker.com/)
 
-### `npm run build` fails to minify
+## Contribuyendo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Si deseas contribuir al proyecto, crea un fork del repositorio y trabaja en una rama separada. Cuando hayas terminado, envía un pull request para revisión.
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia XYZ - consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
+
+## Reconocimientos
+
+Agradecemos a todas las personas, proyectos u organizaciones que hayan contribuido al proyecto o inspirado su creación.
+
+
+
