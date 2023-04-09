@@ -21,7 +21,7 @@ Sigue estos pasos para configurar el entorno de desarrollo local y cómo instala
 
 1. Clona el repositorio:
 
-git clone https://github.com/tu_usuario/tu_repositorio.git
+git clone https://github.com/JhaviOwnz/tu_repositorio.git
 
 
 2. Ingresa al directorio del proyecto:
