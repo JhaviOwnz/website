@@ -18,3 +18,7 @@ EXPOSE 5000
 
 # Iniciar la aplicación
 CMD ["npm", "start"]
+
+
+
+

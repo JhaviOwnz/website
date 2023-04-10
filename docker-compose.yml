@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   frontend:
-    build: .
+    build: ./frontend
     container_name: app-frontend
     ports:
       - "3000:3000"
@@ -11,6 +11,8 @@ services:
     environment: {}
     env_file:
       - ./.env
+    volumes:
+      - ./frontend:/app/frontend
   backend:
     build: ./backend
     container_name: app-backend
@@ -37,3 +39,4 @@ networks:
 
 volumes:
   db-mongo:
+

@@ -1,0 +1,34 @@
+# Archivos y directorios de Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Archivos temporales y de caché del sistema
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.bak
+
+# Archivos de registro y directorios
+logs/
+*.log
+
+# Archivos de la base de datos
+*.sqlite
+
+# Archivos de configuración de los editores
+.vscode/
+.idea/
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.production
